@@ -1,5 +1,5 @@
 function isLeap(year) {
-    var message = "Year " + year + " is a leap year!"
+    var message = "Year " + year + " is a leap year!";
     if ((year % 4) == 0 && (year % 100 != 0)) {
         alert(message)
     } if ((year % 100 == 0) && (year % 400 == 0)) {
@@ -9,4 +9,4 @@ function isLeap(year) {
     }
 }
 
-isLeap(prompt("Please enter the year to check"))
+isLeap(prompt("Please enter the year to check"));
