@@ -1,0 +1,191 @@
+body{ 
+    margin:0;
+    background-color: white;  
+}
+
+.menu{
+    background: #c9c089;
+    position:fixed;
+    width: 100%;
+    padding: 1px 1px 1px;
+}
+
+.menu a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.nav-left a{
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    font-family:'Courier New', Courier, monospace;
+    float: left;
+    padding: 0% 0% 0% 3%;
+    text-transform: uppercase;    
+}
+
+.nav-right {
+    float:right;
+    padding: 1.5px 1% 0% 0%;
+    text-align: center;
+}
+
+.nav-button{
+    font-size: 12px;
+    font-family: 'Monaco';
+    cursor: pointer;
+    background-color: white;
+    width: 60px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.nav-button a{
+    text-decoration: none
+}
+
+.nav-button:hover{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.main {
+    color: #444444;
+    padding: 5% 10% 10% 10%;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.reference {
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+
+.reference:hover {
+    cursor: pointer;
+    color: #4CAF50;
+}
+
+h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.image img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.caption {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.caption a{
+    text-decoration: none;
+    color: black;
+}
+
+.caption a:hover{
+    cursor: pointer;
+}
+
+.ending {
+    text-align: right;
+}
+
+footer{
+    font-family:'Courier New', Courier, monospace;
+    background: #c9c089;
+    font-size: 13px;
+    color:#000000;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer a{
+    text-decoration: none;
+    color: #262626;
+}
+
+footer a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 4%;
+    bottom: 3%;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    background: none;
+    font-size: 120%;
+}
+
+.back-to-top a{
+    text-decoration: none;
+}
+
+/* Contact Page Style Here */
+
+#contact #form {
+    width: 75%;
+    margin-left : 22%;
+}
+
+#contact .page-heading{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+#contact .music{
+    margin-top: 20px;
+    }
+
+#contact #form input{
+    width: 75%;
+    height: 40px;
+    border-radius: 5px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+#contact #form #message{
+    width: 75%;
+    background: #ffffff;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+#contact #form #submit{
+    height: 40px;
+    width: 30%;
+    border-radius: 5px;
+    margin-left : 45.6%;
+    background: #ffffff;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+}
+
+#contact #form #submit:hover{
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
