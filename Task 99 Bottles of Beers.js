@@ -11,3 +11,7 @@ while (beerNumber != 0) {
     }
     beerNumber--;
 }
+
+for (var beerCount = 99; beerCount >= 0; beerCount--) {
+    console.log("beerCount")
+}
