@@ -8,7 +8,7 @@ var player2 = randomDicee();
 
 if (player1 > player2) {
   document.querySelector("h1").innerHTML = "Player 1 Wins";
-  } else if (player1 = player2) {
+  } else if (player1 === player2) {
   document.querySelector("h1").innerHTML = "Big Draw!!!";
   } else {
   document.querySelector("h1").innerHTML = "Player 2 Wins";
