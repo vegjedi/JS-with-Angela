@@ -11,3 +11,8 @@ $("h1").click(function(){
 $("input").keydown(function(event){
     $("h1").text(event.key);
 })
+
+$("h1").on("mouseover", function(){
+    $("h1").css("color", "purple");
+    $("h1").slideUp().animate({opacity:0.5}).slideDown().animate({opacity:1});
+})
