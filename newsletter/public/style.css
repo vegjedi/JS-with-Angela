@@ -20,16 +20,21 @@ body {
   z-index: 2;
 }
 
-.form-signin input[type="email"] {
-  margin-bottom: -1px;
+.top {
+  margin-top: -1px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.form-signin input[type="password"] {
+.middle {
+  border-radius: 0;
+  margin-bottom: -1px;
+}
+
+.bottom {
   margin-bottom: 10px;
-  border-top-left-radius: 0;
   border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .bd-placeholder-img {
@@ -38,6 +43,10 @@ body {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.mylogo {
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
