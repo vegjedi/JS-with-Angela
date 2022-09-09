@@ -13,7 +13,7 @@ app.get("/", function(req, res){
 
 app.post("/", function(req, res){
   const query = req.body.cityName;
-  const apiKEY = "6b6a817d74f2f9a04b1c87f61f227ed9";
+  const apiKEY = "your own key";
   const unit = "metric";
   const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&appid=" + apiKEY + "&units=" + unit;
   https.get(url, function(response) {
@@ -31,8 +31,6 @@ app.post("/", function(req, res){
     });
   });
   })
-
-
 
 app.listen(port, function() {
   console.log("Server is running on port 3000");
