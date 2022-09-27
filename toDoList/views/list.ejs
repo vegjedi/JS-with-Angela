@@ -7,11 +7,13 @@
 </head>
 <body>
 
-    <% if (kindOfDay === "Saturday" || kindOfDay === "Sunday") { %>
-        <h1 style="color: purple"><%= kindOfDay %> ToDo List</h1>
-    <% } else { %>
-        <h1 style="color: green"><%= kindOfDay %> ToDo List</h1>
-    <% } %>
+    <h1><%= kindOfDay %> ToDo List</h1>
+
+    <ul>
+        <li>Buy Vegan Food</li>
+        <li>Cook Vegan Food</li>
+        <li>Eat Vegan Food</li>
+    </ul>
 
 </body>
 </html>
