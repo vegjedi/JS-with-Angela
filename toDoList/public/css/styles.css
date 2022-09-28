@@ -8,6 +8,7 @@ html {
 h1 {
   color: #fff;
   padding: 10px;
+  text-align: center;
 }
 
 .box {
@@ -49,6 +50,7 @@ p {
   font-size: 20px;
   font-weight: 200;
   color: #00204a;
+  text-align: center;
 }
 
 form {
@@ -93,4 +95,8 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 10%;
+  width: 100%;
 }
