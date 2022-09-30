@@ -21,22 +21,29 @@ const mongoose = require("mongoose");
 mongoose.connect("mongodb://localhost:27017/fruitDB");
 
 const fruitSchema = new mongoose.Schema({
-    name: String,
-    rating: Number,
+    name: {
+        type: String,
+        required: [true, "check your data entry, name needed"]
+    },
+    rating: {
+        type: Number,
+        min: 1,
+        max: 10
+    },
     review: String,
-  });
+});
 
-  const Fruit = mongoose.model("Fruit", fruitSchema);
+const Fruit = mongoose.model("Fruit", fruitSchema);
 
-//   const fruit = new Fruit({
-//         name: "Orange",
-//         rating: 5,
-//         review: "so so friend"
+// const fruit = new Fruit({
+//     name: "Durian",
+//     rating: 9,
+//     review: "Queen of Fruits"
 //     }
-//   );
-//   fruit.save();
+// );
+// fruit.save();
 
-Fruit.find(function (err, fruits){
+Fruit.find(function(err, fruits){
     if (err){
      console.log(err)   
     }
