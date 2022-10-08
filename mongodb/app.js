@@ -43,15 +43,22 @@ const Fruit = mongoose.model("Fruit", fruitSchema);
 // );
 // fruit.save();
 
-Fruit.find(function(err, fruits){
-    if (err){
-     console.log(err)   
-    }
-    else {
-    mongoose.connection.close();
-    fruits.forEach(function(fruitName){
-        console.log(fruitName.name)
-    });
-    }
-});
+// Fruit.find(function(err, fruits){
+//     if (err){
+//      console.log(err)   
+//     }
+//     else {
+//     mongoose.connection.close();
+//     fruits.forEach(function(fruitName){
+//         console.log(fruitName.name)
+//     });
+//     }
+// });
 
+Fruit.deleteOne({name: "Durian"}, function(err){
+    if (err){
+        console.log(err);
+    } else {
+        console.log("Success!");
+    }
+})
